@@ -1,3 +1,10 @@
 
+
+
+url: https://bomengeduld.github.io/boilerplate/
+baseurl: /boilerplate/
+
 port: 4000
-baseurl: https://bomengeduld.github.io/boilerplate/
+
+markdown: kramdown
+
