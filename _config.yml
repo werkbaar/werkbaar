@@ -1,2 +1,11 @@
 
+
+
+url: https://bomengeduld.github.io/boilerplate/
+baseurl: /boilerplate
+
 port: 4000
+
+markdown: kramdown
+
+permalink: pretty
