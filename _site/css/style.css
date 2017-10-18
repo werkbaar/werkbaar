@@ -1,19 +1,183 @@
-body,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 html {
     width: 100%;
     height: 100%;
 }
 
-.center-block {
+#cm{
+  font-size:5vw;
 
-  margin: 50px auto;
+}
 
+h2 {
+  font-size: 3.0vh;
+
+}
+
+/* NAV //////////////////////////////////////////////////////////////////////*/
+
+@media(min-width:767px) {
+    .navbar {
+
+
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+}
+    .navbar-default {
+        background-color: white;
+        border-color: white;
+
+    }
+
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a {
+      color: black;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover {
+      color: black;
+      background-color: transparent;
+    }
+
+
+    .navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-brand>img {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* nav collapse ///////////////////////////////////////////////////////////////////// */
+
+.top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 5px;
+    background-color: white;
+
+}
+
+@media (min-width: 768px) {
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white !important;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+/* 1 HEADER ////////////////////////////////////////////////////////////////////////// */
+
+.header-section {
+    height: auto;
+    padding: 150px 0 500px 0;
+    text-align: center;
+    background: #fff;
+}
+
+/* 2 WELKOM ////////////////////////////////////////////////////////////////// */
+
+.welkom-section {
+    height: auto;
+    padding: 0px 0 150px 0;
+    text-align: center;
+    background: orange;
+    color: #fff;
+}
+
+/* 3 GASTEN ////////////////////////////////////////////////////////////////// */
+
+.gasten-section {
+    height: auto;
+    padding: 150px 0 150px 0;
+    text-align: center;
+    background: #fff;
+}
+
+/* 4 KAART ////////////////////////////////////////////////////////////////// */
+
+.kaart-section {
+    height: 100%;
+    padding-top: 150px;
+    margin: 100px auto;
+    text-align: center;
+    background: orange;
+}
+
+/* 5 GASTVROUW ////////////////////////////////////////////////////////////////// */
+
+.gastvrouw-section {
+    height: 100%;
+    padding-top: 150px;
+    margin: 100px auto;
+    text-align: center;
+    background: #fff;
+}
+
+
+/* 6 CONTACT //////////////////////////////////////////////////////////////////*/
+
+.contact-section {
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: orange;
 }
 
 
 .contact {
-  padding: 25px 0 310px 0;
-  background: url(/img/contactmosman.jpg) no-repeat center center fixed;
+  padding: 80px 0 215px 0 !important;
+  background: url("") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,12 +194,11 @@ html {
   font-size: 2.5em;
   border: 1px solid #555;
   background-color: rgba(0,0,0,0.6);
-  padding-top: 20px;
+  padding-top: 15px;
   height: 75px;
   color: #fff;
   font-weight: 500;
   line-height: 40px;
-  padding-left: 50px;
   text-align: center;
 }
 
@@ -84,5 +247,82 @@ html {
 }
 
 #contactform .btn:hover {
-  background: rgba(18,126,19,0.7);
+  background: rgba(255,255,255,0.1);
+}
+
+/* 7 FOOTER ////////////////////////////////////////////////////////////////// */
+
+
+.footer-section {
+    height: auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    background: white;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+footer span.email {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+
+}
+
+footer ul.quicklinks li a:hover {
+  color: white !important;
+}
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: black !important;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
 }
