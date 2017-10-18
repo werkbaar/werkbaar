@@ -2,7 +2,8 @@
 
 
 url: https://bomengeduld.github.io/boilerplate/
-baseurl: /boilerplate/
+
+baseurl: 
 
 port: 4000
 
