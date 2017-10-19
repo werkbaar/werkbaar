@@ -132,10 +132,10 @@ of those sections to manage the look and feel of the site. */
 
 .welkom-section {
     height: auto;
-    padding: 0px 0 150px 0;
+    padding: 150px 0 150px 0;
     text-align: center;
-    background: orange;
-    color: #fff;
+    background: rgb(247, 212, 165);
+
 }
 
 /* 3 GASTEN ////////////////////////////////////////////////////////////////// */
@@ -144,7 +144,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding: 150px 0 150px 0;
     text-align: center;
-    background: #fff;
+    background: rgb(247, 212, 165);
 }
 
 /* 4 KAART ////////////////////////////////////////////////////////////////// */
@@ -154,7 +154,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     margin: 100px auto;
     text-align: center;
-    background: orange;
+    background: rgb(247, 212, 165);
 }
 
 /* 5 GASTVROUW ////////////////////////////////////////////////////////////////// */
@@ -174,7 +174,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding-top: 150px;
     text-align: center;
-    background: orange;
+    background: rgb(247, 212, 165);
 }
 
 
