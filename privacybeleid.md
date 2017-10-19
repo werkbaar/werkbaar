@@ -71,4 +71,4 @@ De meeste browsers zijn standaard ingesteld om cookies te accepteren, maar u kun
 
 /// Vragen en feedback ///
 
-We controleren regelmatig of we aan dit privacybeleid voldoen. Als u vragen heeft over dit privacybeleid, kunt u contact met ons opnemen per email: info@mos-man.be
+We controleren regelmatig of we aan dit privacybeleid voldoen. Als u vragen heeft over dit privacybeleid, kunt u contact met ons opnemen per email: aline@werkbaar.net
