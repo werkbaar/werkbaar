@@ -1,12 +1,37 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
 
-
-
-url: https://bomengeduld.github.io/boilerplate/
-
-baseurl: 
-
+url: http://werkbaar.net
+title: WerkBaAr
+email: aline@werkbaar.net
+author: aline
+description: > # ""
+copyright:
+credits: 'Credits: '
 port: 4000
 
-markdown: kramdown
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
 
+gems:
+  #  - jekyll-seo-tag
+  #  - jekyll-sitemap
+
+
+# Build settings
+markdown: kramdown
 permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: twitter
+    url:
+  - title: github
+    url:
+  - title: linkedin
+    url:

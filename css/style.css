@@ -118,11 +118,14 @@ of those sections to manage the look and feel of the site. */
 
 /* 1 HEADER ////////////////////////////////////////////////////////////////////////// */
 
-.header-section {
-    height: auto;
-    padding: 150px 0 500px 0;
-    text-align: center;
-    background: #fff;
+
+#header{
+  height: auto;
+  padding: 250px 0 250px 0;
+  text-align: center;
+  background: url('img/body_1276x871px.png') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
 }
 
 /* 2 WELKOM ////////////////////////////////////////////////////////////////// */
@@ -268,7 +271,7 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+  color: black;
   text-transform: uppercase;
   text-transform: none;
 }
