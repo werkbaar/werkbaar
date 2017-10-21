@@ -263,6 +263,11 @@ of those sections to manage the look and feel of the site. */
     background: white;
 }
 
+a {
+    color: black !important;
+    text-decoration: underline;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -304,7 +309,7 @@ ul.social-buttons {
 
 ul.social-buttons li a {
   display: block;
-  background-color: black;
+  background-color:
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -320,7 +325,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 .btn:focus,
