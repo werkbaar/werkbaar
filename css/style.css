@@ -427,7 +427,7 @@ of those sections to manage the look and feel of the site. */
 
 .contact-section {
     height: auto;
-    padding:150 0 150 0;
+    padding:150px 0 50px 0;
     text-align: center;
 
 }
@@ -504,7 +504,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 #contactform .btn:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(244,81,30,0.4); rgba(244, 81, 30)
 }
 
 /* 7 FOOTER ////////////////////////////////////////////////////////////////// */
@@ -514,11 +514,11 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding: 50px 0 50px 0;
     text-align: center;
-    background: white;
+    background: #f4511e;
 }
 
 a {
-    color: black !important;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -530,7 +530,7 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
   text-transform: none;
 }
@@ -538,7 +538,7 @@ footer span.copyright {
 footer span.email {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   text-transform: none;
 }
@@ -570,7 +570,7 @@ ul.social-buttons li a {
   border-radius: 100%;
   font-size: 20px;
   line-height: 40px;
-  color: white;
+  color: #fff;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -580,7 +580,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: white !important;
+  background-color: none !important;
 }
 
 .btn:focus,
