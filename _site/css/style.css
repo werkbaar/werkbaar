@@ -18,7 +18,7 @@ h4 {
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
-    float: left;
+
 }
 
 /* NAV //////////////////////////////////////////////////////////////////////*/
@@ -120,43 +120,59 @@ of those sections to manage the look and feel of the site. */
 /* 2 WELKOM ////////////////////////////////////////////////////////////////// */
 
 #welkom {
-    height: auto;
-    padding: 150px 0 150px 0;
-    text-align: center;
-    background: white;
-
+  height: auto;
+  padding: 65px 65px 65px 65px;
+  text-align: center;
+  background: white;
 }
+
+#welkom h4 {
+float: left;
+}
+
 
 /* 3 GASTEN ////////////////////////////////////////////////////////////////// */
 
-.gasten-section {
-    height: auto;
-    padding: 150px 0 150px 0;
-    text-align: center;
-    background: rgb(247, 212, 165);
+
+#gasten h4 {
+  float: left;
 }
 
 /* 4 KAART ////////////////////////////////////////////////////////////////// */
 
-.kaart-section {
-    height: 100%;
-    padding-top: 150px;
-    margin: 100px auto;
-    text-align: center;
-    background: rgb(247, 212, 165);
-}
+#kaart h2 {
 
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+  float: none;
+
+}
 
 /* 5 GASTVROUW ////////////////////////////////////////////////////////////////// */
 
-.gastvrouw-section {
-    height: 100%;
-    padding-top: 150px;
-    margin: 100px auto;
-    text-align: center;
-    background: #fff;
+
+#gastvrouw h4 {
+  float: left;
 }
 
+/*#gastvrouw img {
+padding: 200px 0 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #gastvrouw img {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #gastvrouw img  {
+      font-size: 150px;
+  }
+}
 
 /* 6 CONTACT //////////////////////////////////////////////////////////////////*/
 
