@@ -124,7 +124,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     text-align: center;
     width: 100%; /*new*/
-    max-width: 660px; /*new*/
+    max-width: 440px; /*new*/
     margin: 0 auto;
 }
 
