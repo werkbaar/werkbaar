@@ -159,7 +159,11 @@ float: left;
 }
 
 
+#signal {
 
+padding: 200px 0 0 0;
+
+}
 
 
 /* 3 GASTEN ////////////////////////////////////////////////////////////////// */
@@ -170,14 +174,15 @@ float: left;
 }
 
 #gasten {
-
-      text-align: center;
+text-align: center;
 }
 
+#globe {
 
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
+padding: 100px 0 0 0;
+
+}
+
 /* 4 KAART ////////////////////////////////////////////////////////////////// */
 
 #kaart h2 {
