@@ -1,7 +1,5 @@
 ---
-layout: pages
-title: Privacybeleid
-permalink: /privacybeleid/
+layout: default
 ---
 Privacybeleid WerkBaAr -
 

@@ -119,7 +119,7 @@ of those sections to manage the look and feel of the site. */
 
 #header .col-sm-6 {
 
-padding: 40px 0 0 0;
+padding: 10px 0 0 0;
 
 }
 
@@ -155,7 +155,7 @@ padding: 40px 0 0 0;
 
 #welkom {
   height: auto;
-  padding: 30px 65px 65px 65px;
+  padding: 65px 65px 65px 65px;
   text-align: center;
   background: white;
 }
