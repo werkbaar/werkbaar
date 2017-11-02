@@ -16,7 +16,7 @@ port: 4000
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-gems:
+plugins:
   #  - jekyll-seo-tag
   #  - jekyll-sitemap
 
