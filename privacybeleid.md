@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /privacybeleid/
 ---
 Privacybeleid WerkBaAr -
 
