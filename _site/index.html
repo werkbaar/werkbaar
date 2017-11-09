@@ -1,584 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="aline">
 
-
-
-  <!-- Bootstrap Core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="/css/style.css" rel="stylesheet">
-
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
-  <!-- ****** faviconit.com favicons ****** -->
-  	<link rel="shortcut icon" href="/favicon.ico">
-  	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-  	<link rel="icon" type="image/png" sizes="196x196" href="img/favicon-192.png">
-  	<link rel="icon" type="image/png" sizes="160x160" href="img/favicon-160.png">
-  	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
-  	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
-  	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-  	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-  	<link rel="apple-touch-icon" href="img/favicon-57.png">
-  	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
-  	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
-  	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
-  	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon-60.png">
-  	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon-120.png">
-  	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon-76.png">
-  	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon-152.png">
-  	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
-  	<meta name="msapplication-TileColor" content="#FFFFFF">
-  	<meta name="msapplication-TileImage" content="img/favicon-144.png">
-  	<meta name="msapplication-config" content="/browserconfig.xml">
-
-  	<!-- ****** faviconit.com favicons ****** -->
-  <style>
-
-
-   #header {
-     height: auto;
-     padding: 100px 0 50px 0;
-     text-align: center;
-     background: url('/img/body_1276x871px.png') no-repeat center center fixed;
-     background-size: cover;
-     width: 100%;
-   }
-
-   .welkom-video {
-       height: auto;
-       text-align: center;
-       width: 100%; /*new*/
-       max-width: 600px; /*new*/
-       margin: 0 auto;
-   }
-
-   #subtitle {
-     color: none;
-   }
-
-
-   #subscribe {
-     color: black;
-   }
-
-   .jumbotron {
-       background-color: #f4511e;
-       color: #fff;
-       padding: 100px 25px;
-       font-family: Montserrat, sans-serif;
-   }
-
-
-   #welkom h4, #welkom h1, #welkom p, #welkom h2  {
-   float: left;
-   }
-
-
-
-   .container-fluid {
-       padding: 60px 50px;
-   }
-   .bg-grey {
-       background-color: #f6f6f6;
-   }
-   .logo-small {
-       color: #f4511e;
-       font-size: 50px;
-   }
-   .logo {
-       color: #f4511e;
-       font-size: 200px;
-   }
-   .thumbnail {
-       padding: 0 0 15px 0;
-       border: none;
-       border-radius: 0;
-   }
-   .thumbnail img {
-       width: 100%;
-       height: 100%;
-       margin-bottom: 10px;
-   }
-
-   #gasten h4, #gasten h2 {
-     float: left;
-   }
-
-   #gasten {
-         text-align: center;
-   }
-
-   #kaart a {
-
-     color: black !important;
-     text-decoration: underline;
-   }
-
-   #myCarousel h4 {
-     float: none;
-   }
-
-   .carousel-control.right, .carousel-control.left {
-       background-image: none;
-       color: #f4511e;
-   }
-   .carousel-indicators li {
-       border-color: #f4511e;
-   }
-   .carousel-indicators li.active {
-       background-color: #f4511e;
-   }
-   .item h4 {
-       font-size: 19px;
-       line-height: 1.375em;
-       font-weight: 400;
-       font-style: italic;
-       margin: 70px 0;
-   }
-   .item span {
-       font-style: normal;
-   }
-   .panel {
-       border: 1px solid #f4511e;
-       border-radius:0 !important;
-       transition: box-shadow 0.5s;
-   }
-   .panel:hover {
-       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-   }
-   .panel-footer .btn:hover {
-       border: 1px solid #f4511e;
-       background-color: #fff !important;
-       color: #f4511e;
-   }
-   .panel-heading {
-       color: #fff !important;
-       background-color: #f4511e !important;
-       padding: 25px;
-       border-bottom: 1px solid transparent;
-       border-top-left-radius: 0px;
-       border-top-right-radius: 0px;
-       border-bottom-left-radius: 0px;
-       border-bottom-right-radius: 0px;
-   }
-   .panel-footer {
-       background-color: white !important;
-   }
-   .panel-footer h3 {
-       font-size: 32px;
-   }
-   .panel-footer h4 {
-       color: #aaa;
-       font-size: 14px;
-   }
-   .panel-footer .btn {
-       margin: 15px 0;
-       background-color: #f4511e;
-       color: #fff;
-   }
-
-   footer .glyphicon {
-       font-size: 20px;
-       margin-bottom: 20px;
-       color: #f4511e;
-   }
-
-   #Aline {
-text-align: center;
-padding: 100px 0 0 0;
-   }
-
-#gastvrouw h4, #gastvrouw p {
-float: left;
-}
-
-#gastvrouw h4 {
-margin-bottom: 0;
-
-}
-
-   .slideanim {visibility:hidden;}
-   .slide {
-       animation-name: slide;
-       -webkit-animation-name: slide;
-       animation-duration: 1s;
-       -webkit-animation-duration: 1s;
-       visibility: visible;
-   }
-   @keyframes slide {
-     0% {
-       opacity: 0;
-       transform: translateY(70%);
-     }
-     100% {
-       opacity: 1;
-       transform: translateY(0%);
-     }
-   }
-   @-webkit-keyframes slide {
-     0% {
-       opacity: 0;
-       -webkit-transform: translateY(70%);
-     }
-     100% {
-       opacity: 1;
-       -webkit-transform: translateY(0%);
-     }
-   }
-   @media screen and (max-width: 768px) {
-     .col-sm-4 {
-       text-align: center;
-       margin: 25px 0;
-     }
-     .btn-lg {
-         width: 100%;
-         margin-bottom: 35px;
-     }
-   }
-   @media screen and (max-width: 480px) {
-     .logo {
-         font-size: 150px;
-     }
-   }
-
-   #contact {
-     padding: 80px 0 80px 0 !important;
-     background: url("img/contact2.png") no-repeat center center fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
-
-   .glyphicon {
-       position: relative;
-       top: 1px;
-       display:block;
-       text-align:center
-       font-family: 'Glyphicons Halflings';
-       font-style: normal;
-       font-weight: 400;
-       line-height: 1;
-       -webkit-font-smoothing: antialiased;
-       -moz-osx-font-smoothing: grayscale;
-
-   .contact-section h1 {
-   color: white;
-   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-   font-size: 2.5em;
-   border: 1px solid #555;
-   background-color: rgba(0,0,0,0.6);
-   padding-top: 15px;
-   margin-bottom: 40px;
-   height: 75px;
-   font-weight: 500;
-   line-height: 40px;
-   text-align: center;
-   font-size:4vw;
-   }
-
-   .contact i {
-     padding: 0 20px;
-     font-size: 0.8em;
-   }
-
-
-   #comments {
-     margin-top: 0;
-   }
-
-   #contactform {
-     height: 215px;
-   }
-
-   #contactform .right {
-     float: right;
-   }
-
-   #contactform input,
-   #contactform textarea {
-     margin-bottom: 14px;
-     width: 100%;
-     outline: none;
-     border: none;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     font-size: 11px;
-   }
-
-   #contactform input {
-     padding-left: 15px;
-     height: 44px;
-     border-radius: 0;
-   }
-
-   #contactform textarea {
-     padding: 15px;
-     height: 161px;
-     border-radius: 0;
-   }
-
-   #contactform .btn {
-     width: 100%;
-     height: 50px;
-     border-radius: 0;
-     border: 1px solid #333;
-     background: rgba(0,0,0,0.8);
-     color: #fff;
-   }
-
-   #contactform .btn:hover {
-     background: rgba(244,81,30,0.4); rgba(244, 81, 30)
-   }
-
-
-
-   /* 7 FOOTER ////////////////////////////////////////////////////////////////// */
-
-
-   .footer-section {
-       height: auto;
-       text-align: center;
-       background: #f4511e;
-   }
-
-   a {
-       color: #fff !important;
-       text-decoration: none;
-   }
-
-   footer {
-     padding: 0 0 0 0;
-     text-align: center;
-   }
-
-   footer span.copyright {
-     line-height: 40px;
-     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     color: #fff;
-     text-transform: uppercase;
-     text-transform: none;
-   }
-
-   footer span.email {
-     line-height: 40px;
-     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     color: #fff;
-     text-transform: uppercase;
-     text-transform: none;
-   }
-
-   footer ul.quicklinks {
-     margin-bottom: 0;
-     line-height: 40px;
-     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-transform: uppercase;
-     text-transform: none;
-
-   }
-
-   footer ul.quicklinks li a:hover {
-
-     text-decoration: underline;
-   }
-
-
-   ul.social-buttons {
-     margin-bottom: 0;
-   }
-
-   ul.social-buttons li a {
-     display: block;
-     background-color:
-     height: 40px;
-     width: 40px;
-     border-radius: 100%;
-     font-size: 20px;
-     line-height: 40px;
-     color: #fff;
-     outline: none;
-     -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-     transition: all 0.3s;
-   }
-
-   ul.social-buttons li a:hover,
-   ul.social-buttons li a:focus,
-   ul.social-buttons li a:active {
-     background-color: none !important;
-   }
-
-   .btn:focus,
-   .btn:active,
-   .btn.active,
-   .btn:active:focus {
-     outline: none;
-   }
-
-  </style>
-
-
-</head>
-
-
-	<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
-  <div class="container">
-    <div class="navbar-header page-scroll">
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-						</button>
-      <a class="navbar-brand page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"><img class="img-responsive" alt="logo"
-							src="/img\logo_200x38px_t.png"></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
-          <a class="page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"></a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#welkom" data-toggle="collapse" data-target=".navbar-collapse.in">Welkom</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#gasten" data-toggle="collapse" data-target=".navbar-collapse.in">Onze Gasten</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#kaart" data-toggle="collapse" data-target=".navbar-collapse.in">Het Menu</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#gastvrouw" data-toggle="collapse" data-target=".navbar-collapse.in">De Gastvrouw</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#blog" data-toggle="collapse" data-target=".navbar-collapse.in">Blog</a>
-        </li>
-
-      </ul>
-    </div>
-
-    <ul class="nav navbar-nav">
-
-    1  <li><a href="/#top" id="logo"><img src="/img/urbanwildlogo.png" /></a></li>
-
-
-
-
-    1  <li><a href="/">Home</a></li> ?
-
-
-
-    1  <li class=""> <a href="/#collectie">Collectie</a></li>
-
-
-
-    1  <li class="hidden-sm"> <a href="/#luchtzuiverend">Luchtzuiverend</a></li>
-
-
-
-      <li class=""><a href="/jmplants">JM Plants</a></li>
-
-      <li class=""><a href="/contact">Contact</a></li>
-
-      <li class=" hidden-sm"><a href="/verzorging">Verzorging</a></li>
-    </ul>
-
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
-
-		
-
-<section id="header" class="header-section text-center">
-  <!-- Header -->
-    <div class="container-fluid">
-      <center>
-        <div class="center-block" id="logo">
-          <img class="img-responsive" alt="logo" src="/img\logo_850x167px_t.png">
-        </div>
-      </center>
-      <br>
-    <div id="subtitle">
-      <h1>PITTIG TREFPUNT VOOR ONDERNEMEND TALENT.</h1>
-      </div>
-<br><br>
-
-<div class="row">
-
-  <div class="col-sm-6">
-             <div class="welkom-video">
-                  <div class="videowrapper">
-                          <iframe src="https://www.youtube.com/embed/qKqUy6lIKKM" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
-                  </div>
-             </div>
-
-             </div>
-             <div class="col-sm-6">
-             <div class="welkom-video">
-                  <div class="videowrapper">
-                          <iframe src="https://www.youtube.com/embed/txiq-QKbAsY" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
-                  </div>
-             </div>
-             </div>
-</div>
-
-</div>
-
-      <!--
-<br><br><br>
-
-      <form>
-  <div class="input-group">
-    <input type="email" class="form-control" size="20" placeholder="Jouw Email" required>
-    <div class="input-group-btn">
-      <button type="button" class="btn btn-danger">Abonneer</button>
-    </div>
-  </div>
-</form>
-
-<form action="https://getsimpleform.com/messages?form_api_token=2e9c8bd93dad19ae8550201fde42dbd3" method="post">
-    <li class="contact-li">
-        <input type="email" placeholder="Your email" id="email"/>
-        <input type="submit" value="Subscribe" id="submit"/>
-    </li>
-</form>
-<br>
-
-<div id="subscribe">
-<p> <b>Abonneer om de nieuwsbrief van WerkBaAr te ontvangen</b>  </p>
-</div>
-    </div>-->
-
- </section>
-
-
-    <section id="welkom" class="container-fluid">
+<section id="welkom" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h1>Welkom bij WerkBaAr</h1>
@@ -591,9 +13,9 @@ margin-bottom: 0;
       hen op pad om hun verhaal en missie op een overtuigende wijze de wereld in te sturen.</h4><br>
     </div>
 
-     <div class="col-sm-4">
+    <div class="col-sm-4">
       <span id="signal" class="	glyphicon glyphicon-flag logo slideanim"></span>
-     </div>
+    </div>
   </div>
 </section>
 
@@ -604,7 +26,7 @@ margin-bottom: 0;
       <span class="glyphicon glyphicon-user logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h1  class="text-justify">Onze Gasten</h1>
+      <h1 class="text-justify">Onze Gasten</h1>
       <hr>
       <h2>Ondernemend talent</h2><br>
       <h4 class="text-justify">Ben jij een pittig kopje – werkzoekend, werknemer, ondernemer of leidinggevende - en werk je met
@@ -615,48 +37,48 @@ kaart te zetten? Breng je jouw professionele stoofpot graag op een aparte en voo
 wijze op smaak? En sta je ervoor open om jouw verhaal te laten proeven door andere pittige talenten
 om het zo nog meer te verrijken en te versterken? Dan is WerkBaAr de plek voor jou!</h4> <br>
 
-  <h4 class="text-justify">Wees gerust, klant is koning. Jij beslist. We houden rekening met jouw honger, smaak en wensen.
+      <h4 class="text-justify">Wees gerust, klant is koning. Jij beslist. We houden rekening met jouw honger, smaak en wensen.
 Tafeltje alleen, per twee of in groep? Alles kan, alles mag. We werken op jouw ritme en op jouw
 maat. Als je WerkBaAr maar goed gevoed verlaat.</h4>
     </div>
   </div>
 
-<br>
-<hr>
-<br>
+  <br>
+  <hr>
+  <br>
 
-<h3>Proef de suggesties van eerdere gasten</h3>
- <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+  <h3>Proef de suggesties van eerdere gasten</h3>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <h4>“Vandaag ben ik op cursus geweest rond het thema empathisch luisteren. Aline heeft dat geweldig gedaan! Vond het heel fijn. Door de inbreng van de groep toch weer allerlei dingen opgestoken en fijne contacten gelegd.” <br><br><span>Pieter Hendrickx</span></h4>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>“Vandaag ben ik op cursus geweest rond het thema empathisch luisteren. Aline heeft dat geweldig gedaan! Vond het heel fijn. Door de inbreng van de groep toch weer allerlei dingen opgestoken en fijne contacten gelegd.” <br><br><span>Pieter Hendrickx</span></h4>
+      </div>
+      <div class="item">
+        <h4>"WerkBaAr doet ondernemende talenten hun (werk)dromen, passie en talent uitdrukken vanuit de overtuiging dat ze zo ook een hoger niveau van (werk)geluk ervaren."<br><br><span>Sofie Rombouts</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Vanuit je passie en talent ondernemen? Dan moet je bij Werkbaar zijn. Je hart volgen en werk doen wat bij je past,daar word je blij en gelukkig van!"<br><br><span>Shirley Rianne</span></h4>
+      </div>
     </div>
-    <div class="item">
-      <h4>"WerkBaAr doet ondernemende talenten hun (werk)dromen, passie en talent uitdrukken vanuit de overtuiging dat ze zo ook een hoger niveau van (werk)geluk ervaren."<br><br><span>Sofie Rombouts</span></h4>
-    </div>
-    <div class="item">
-      <h4>"Vanuit je passie en talent ondernemen?Dan moet je bij Werkbaar zijn. Je hart volgen en werk doen wat bij je past,daar word je blij en gelukkig van!"<br><br><span>Shirley Rianne</span></h4>
-    </div>
-  </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
- </div>
+  </div>
 </section>
 
 
@@ -672,37 +94,24 @@ maat. Als je WerkBaAr maar goed gevoed verlaat.</h4>
       <span class="	glyphicon glyphicon-film logo-small"></span>
       <h4>Verhaalopbouw</h4>
       <p class="text-justify">
-        In dit individueel traject leert WerkBaAr jou hoe jij jouw motivatie, passie en talent onder
-woorden brengt en hoe je jouw werkdroom verwerkt tot een WerkBaAr verhaal. Zo slaat
-WerkBaAr via taal de brug tussen datgene waar jij, als ondernemend talent, van droomt en wat
-jij in en dankzij je werk waarmaakt. Wil je als zelfstandig ondernemer jouw wat, hoe en waarom
-op een heldere en authentieke wijze aan de markt presenteren, dan bouwt WerkBaAr met jou je
-boodschap op.</p>
+        In dit individueel traject leert WerkBaAr jou hoe jij jouw motivatie, passie en talent onder woorden brengt en hoe je jouw werkdroom verwerkt tot een WerkBaAr verhaal. Zo slaat WerkBaAr via taal de brug tussen datgene waar jij, als ondernemend talent,
+        van droomt en wat jij in en dankzij je werk waarmaakt. Wil je als zelfstandig ondernemer jouw wat, hoe en waarom op een heldere en authentieke wijze aan de markt presenteren, dan bouwt WerkBaAr met jou je boodschap op.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-road logo-small"></span>
       <h4>Communicatiecoaching in een individueel traject</h4>
       <p class="text-justify">
-        WerkBaAr coacht je ook om met je verhaal naar buiten te komen en het op een persoonlijke
-wijze te communiceren. Zo zal jouw verhaal andere talenten inspireren en talent-spotters
-overtuigen om met jou verder te gaan.<br><br>
-
-Verschillende werkwijzen en technieken zijn hier mogelijk, afhankelijk van jouw noden, doelen
-en persoonlijkheid en van jouw professionele ontdekkingstocht. Zoek je bijvoorbeeld je weg nog
-op de arbeidsmarkt, dan wil je wellicht vooral werkverschaffers van je kennen en kunnen
-overtuigen. Treed je op als zelfstandig ondernemer, dan heb je er baat bij om klanten of
-investeerders warm te maken voor jouw producten of diensten en wil je vooral ook je
-medewerkers met je meekrijgen. WerkBaAr zoekt het vooraf uit met jou.</div>
+        WerkBaAr coacht je ook om met je verhaal naar buiten te komen en het op een persoonlijke wijze te communiceren. Zo zal jouw verhaal andere talenten inspireren en talent-spotters overtuigen om met jou verder te gaan.<br><br> Verschillende werkwijzen
+        en technieken zijn hier mogelijk, afhankelijk van jouw noden, doelen en persoonlijkheid en van jouw professionele ontdekkingstocht. Zoek je bijvoorbeeld je weg nog op de arbeidsmarkt, dan wil je wellicht vooral werkverschaffers van je kennen en
+        kunnen overtuigen. Treed je op als zelfstandig ondernemer, dan heb je er baat bij om klanten of investeerders warm te maken voor jouw producten of diensten en wil je vooral ook je medewerkers met je meekrijgen. WerkBaAr zoekt het vooraf uit met
+        jou.</div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-refresh logo-small"></span>
       <h4>Communicatiecoaching op basis van peer learning</h4>
       <p class="text-justify">
-        Zodra elk talent zijn verhaal op punt heeft gesteld, kan hij ervoor kiezen om een groepstraject op te starten.
-        In dat traject verenigt WerkBaAr verhalen van gelijkgestemd talent (peers) rond de zin die hen met elkaar verbindt.
-        Vanuit die verbinding verscherpt elk talent voor zichzelf de punten die hem van de andere talenten onderscheidt en versterken
-        de talenten onderling ook elkaars verhaallijn. Zo verrijkt elk talent zijn persoonlijke ontdekkingspad en ontstaat er sur plus pure
-        verbinding op de arbeidsmarkt.
- </p>
+        Zodra elk talent zijn verhaal op punt heeft gesteld, kan hij ervoor kiezen om een groepstraject op te starten. In dat traject verenigt WerkBaAr verhalen van gelijkgestemd talent (peers) rond de zin die hen met elkaar verbindt. Vanuit die verbinding verscherpt
+        elk talent voor zichzelf de punten die hem onderscheiden van de andere talenten en versterken de talenten onderling ook elkaars verhaallijn. Zo verrijkt elk talent zijn persoonlijke ontdekkingspad en ontstaat er sur plus pure verbinding op de arbeidsmarkt.
+      </p>
     </div>
   </div>
   <br><br>
@@ -712,19 +121,17 @@ medewerkers met je meekrijgen. WerkBaAr zoekt het vooraf uit met jou.</div>
       <h4>WerkBaAr als interactief trefpunt</h4>
       <p>
         En die verbinding die bevestigt WerkBaAr nog – zowel online als in de pop up WerkBaAr.
-     </p>
+      </p>
     </div>
-   </div>
-   <br><br>
+  </div>
+  <br><br>
   <div class="row slideanim">
     <div class="col-sm-6">
       <span class="glyphicon glyphicon-globe logo-small"></span>
       <h4>Online WerkBaAr</h4>
       <p class="text-justify">
-        Je vindt hier pittige ingrediënten en rijke recepten om je professionele ontdekkingstocht goed
-  gevoed van start te gaan en/of smaakvol verder te zetten. WerkBaAr serveert voor ieder wat
-  wils: van een selectie gekruide smaakmakers voor fijnproevers en hartige hoofdplats voor
-  veelvraten tot een pittig kopje als afsluiter. Wees verrast door het menu. Volg WerkBaAr op <a href="https://www.facebook.com/WerkBaAr/"><b>facebook</b></a>
+        Je vindt hier pittige ingrediënten en rijke recepten om je professionele ontdekkingstocht goed gevoed van start te gaan en/of smaakvol verder te zetten. WerkBaAr serveert voor ieder wat wils: van een selectie gekruide smaakmakers voor fijnproevers en
+        hartige hoofdplats voor veelvraten tot een pittig kopje als afsluiter. Wees verrast door het menu. Volg WerkBaAr op <a href="https://www.facebook.com/WerkBaAr/"><b>facebook</b></a>
 
       </p>
 
@@ -733,17 +140,13 @@ medewerkers met je meekrijgen. WerkBaAr zoekt het vooraf uit met jou.</div>
       <span class="glyphicon glyphicon-cutlery logo-small"></span>
       <h4>De pop up WerkBaAr</h4>
       <p class="text-justify">
-        De pop up WerkBaAr verenigt ondernemende talenten rond een programma van workshops,
-  lezingen en vragenrondes rond het thema ‘werken met passie, met zin en vanuit talent’. Het
-  biedt hen naast een klankbord en inspiratie, ook tools en formats die hen empoweren om (nog
-  meer) met passie, zin en vanuit hun talent te werken. De pop up bereikt een hoogtepunt tijdens
-  de luch: dan kunnen de talenten voluit netwerken en een speeddates aangaan met tal van
-  talent-spotters. Zo verbindt WerkBaAr de talenten behalve onderling, ook met mensen met wie
-  ze in WerkBaAr diepere coaching- of sollicitatiegesprekken kunnen aangaan.
-     </p>
+        De pop up WerkBaAr verenigt ondernemende talenten rond een programma van workshops, lezingen en vragenrondes rond het thema ‘werken met passie, met zin en vanuit talent’. Het biedt hen naast een klankbord en inspiratie, ook tools en formats die hen empoweren
+        om (nog meer) met passie, zin en vanuit hun talent te werken. De pop up bereikt een hoogtepunt tijdens de luch: dan kunnen de talenten voluit netwerken en een speeddates aangaan met tal van talent-spotters. Zo verbindt WerkBaAr de talenten behalve
+        onderling, ook met mensen met wie ze in WerkBaAr diepere coaching- of sollicitatiegesprekken kunnen aangaan.
+      </p>
     </div>
 
-    </div>
+  </div>
 </section>
 
 
@@ -755,51 +158,35 @@ medewerkers met je meekrijgen. WerkBaAr zoekt het vooraf uit met jou.</div>
       <hr>
       <h2>Aline, barista van WerkBaAr</h2><br>
 
-        <h4> Wie ben ik?</h4><br>
-        <p class="text-justify">Ik ben Aline, 30 jaar. "Op papier" doctor arbeidsrecht; maar in <i>real life</i> vooral storyteller en
-verbinder. Vandaag amuseer ik me als barista van WerkBaAr.</p>
-<br><br><br>
+      <h4> Wie ben ik?</h4><br>
+      <p class="text-justify">Ik ben Aline, 30 jaar. "Op papier" doctor arbeidsrecht; maar in <i>real life</i> vooral storyteller en verbinder. Vandaag amuseer ik me als barista van WerkBaAr.</p>
+      <br><br><br>
 
-<h4>Wat me drijft?</h4>
-        <p class="text-justify"> Mensen, ont-moet-ingen, verhalen, verbinding. Iets om elke dag te ervaren: op straat, in je werk,
-onder vrienden, binnen familie. En sinds kort vind ik die drijfveren niet alleen terug in mijn
-vrijwilligerswerk, maar ook in “mijn” WerkBaAr.</p>
-<br><br><br>
-<h4>Wat ik doe?</h4>
-<p class="text-justify">Na 6 jaar als onderwijs- en onderzoeksassistent, een boeiende HR-ervaring en een uitstap als
-advocate, begon bij mij de ondernemingsmicrobe te knagen. Net als mijn drang om mijn
-communicatieve skills en mijn coaching- en netwerkvaardigheden professioneel in te zetten - en niet
-‘enkel’ als vrijwilliger. Dat ik daarvoor moest loskomen van mijn diploma rechten en mijn
-opgebouwde werkverleden, dat was even springen – dat geef ik toe, maar van die sprong heb ik nog
-geen spijt. Precies door wat af te wijken van mijn “klassieke pad” en me te laten drijven door mijn
-passie voor verrijkende ont-moet- ingen en verrassende verhalen, geef ik vorm aan mijn professionele
-(en persoonlijke) ontdekkingspad. Iedereen die ik onderweg tegenkom, zie ik als een verhelderende
-wegwijzer. Het is net die ervaring die ik in en via WerkBaAr wil doorgeven.</p>
-<br><br><br>
-<h4>Mijn missie?</h4>
-<p class="text-justify">Talenten aanmoedigen om elke werkdag weer te beginnen met enthousiasme en een heldere focus
-is iets waarvoor ik vol goesting opsta, steeds met een open houding voor al wie ik op mijn pad
-tegenkom. Dankzij WerkBaAr maak ik zelf ook de WerkBaAr missie waar en zeg ik volmondig ja op
-het (werk)leven.</p>
-<br><br><br>
-<h4>Hoe ik werk?</h4>
-<p class="text-justify">Vanuit mijn enthousiasme en pittigheid inspireer en empower ik andere talenten. Daarbij val ik terug
-op mijn passie voor taal, mijn talent als verhaalopbouwer en mijn ervaring als vormingscoach. Ik
-school me ook non stop bij, zowel op basis van programma’s en opleidinging van externe experten,
-als door zelf te proberen, te doen, te vallen om dan weer met extra wijsheid en ervaring recht te
-krabbelen. Want ook dat hoort voor mij bij “werken met passie en vanuit je talenten”: veerkracht, de
-bereidheid om te leren en om te vallen, wetende dat je met geduld en wilskracht ook wel weer recht
-zal staan. <br><br> Die veerkracht kan je kweken, eventueel met de hulp van aangepaste coaching. Ik geloof hier sterk in
-de kracht van verbindende verhalen en het leren uit constructieve feedback van gelijkgestemd talent.
-Daarom zet ik extra in op communicatiecoaching op basis van peer learning. Die methode dwingt je
-te vertrouwen: in jezelf, maar ook in anderen – dat alles zonder naïef te zijn. En het leert je te delen:
-wat je geeft, krijg je terug. Dat staat vast. Dat heb ik zelf gaandeweg ervaren en beleefd.<br><br>Delen dus, die missie. Zo maak je mee WerkBaAr groot.</p>
+      <h4>Wat me drijft?</h4>
+      <p class="text-justify"> Mensen, ont-moet-ingen, verhalen, verbinding. Iets om elke dag te ervaren: op straat, in je werk, onder vrienden, binnen familie. En sinds kort vind ik die drijfveren niet alleen terug in mijn vrijwilligerswerk, maar ook in “mijn” WerkBaAr.</p>
+      <br><br><br>
+      <h4>Wat ik doe?</h4>
+      <p class="text-justify">Na 6 jaar als onderwijs- en onderzoeksassistent, een boeiende HR-ervaring en een uitstap als advocate, begon bij mij de ondernemingsmicrobe te knagen. Net als mijn drang om mijn communicatieve skills en mijn coaching- en netwerkvaardigheden professioneel
+        in te zetten - en niet ‘enkel’ als vrijwilliger. Dat ik daarvoor moest loskomen van mijn diploma rechten en mijn opgebouwde werkverleden, dat was even springen – dat geef ik toe, maar van die sprong heb ik nog geen spijt. Precies door wat af te
+        wijken van mijn “klassieke pad” en me te laten drijven door mijn passie voor verrijkende ont-moet- ingen en verrassende verhalen, geef ik vorm aan mijn professionele (en persoonlijke) ontdekkingspad. Iedereen die ik onderweg tegenkom, zie ik als
+        een verhelderende wegwijzer. Het is net die ervaring die ik in en via WerkBaAr wil doorgeven.</p>
+      <br><br><br>
+      <h4>Mijn missie?</h4>
+      <p class="text-justify">Talenten aanmoedigen om elke werkdag weer te beginnen met enthousiasme en een heldere focus is iets waarvoor ik vol goesting opsta, steeds met een open houding voor al wie ik op mijn pad tegenkom. Dankzij WerkBaAr maak ik zelf ook de WerkBaAr missie
+        waar en zeg ik volmondig ja op het (werk)leven.</p>
+      <br><br><br>
+      <h4>Hoe ik werk?</h4>
+      <p class="text-justify">Vanuit mijn enthousiasme en pittigheid inspireer en empower ik andere talenten. Daarbij val ik terug op mijn passie voor taal, mijn talent als verhaalopbouwer en mijn ervaring als vormingscoach. Ik school me ook non stop bij, zowel op basis van
+        programma’s en opleidinging van externe experten, als door zelf te proberen, te doen, te vallen om dan weer met extra wijsheid en ervaring recht te krabbelen. Want ook dat hoort voor mij bij “werken met passie en vanuit je talenten”: veerkracht,
+        de bereidheid om te leren en om te vallen, wetende dat je met geduld en wilskracht ook wel weer recht zal staan. <br><br> Die veerkracht kan je kweken, eventueel met de hulp van aangepaste coaching. Ik geloof hier sterk in de kracht van verbindende
+        verhalen en het leren uit constructieve feedback van gelijkgestemd talent. Daarom zet ik extra in op communicatiecoaching op basis van peer learning. Die methode dwingt je te vertrouwen: in jezelf, maar ook in anderen – dat alles zonder naïef
+        te zijn. En het leert je te delen: wat je geeft, krijg je terug. Dat staat vast. Dat heb ik zelf gaandeweg ervaren en beleefd.<br><br>Delen dus, die missie. Zo maak je mee WerkBaAr groot.</p>
 
 
     </div>
 
     <div id="Aline" class="col-sm-4">
-  <img src="http://res.cloudinary.com/liberationfront/image/upload/v1508721025/Aline_ha1cf6.png">
+      <img src="http://res.cloudinary.com/liberationfront/image/upload/v1508721025/Aline_ha1cf6.png">
     </div>
   </div>
 </section>
@@ -840,58 +227,7 @@ wat je geeft, krijg je terug. Dat staat vast. Dat heb ik zelf gaandeweg ervaren 
       </form>
     </div>
 
-<br><br><br><br>
+    <br><br><br><br>
 
   </div>
 </section>
- 
-
-		
-<section class="footer-section">
-  <footer>
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-4">
-              <span class="copyright">Copyright &copy; WerkBaAr 2017</span>
-          </div>
-          <div class="col-md-4">
-              <ul class="list-inline social-buttons" id="social-section">
-                  <li><a href="https://www.facebook.com/WerkBaAr/"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li><a href="https://www.linkedin.com/company/18176962/"><i class="fa fa-linkedin"></i></a>
-                  </li>
-              </ul>
-          </div>
-
-          <!-- <div class="col-md-3">
-              <span class="email">info@mos-man.be</span>
-          </div> -->
-          <div class="col-md-4">
-              <ul class="list-inline quicklinks">
-                  <li> <a href="/privacybeleid/">Privacybeleid</a>
-                  </li>
-                  <!--<li><a href="#">Terms of Use</a>
-                  </li> -->
-              </ul>
-          </div>
-      </div>
-  </div>
-</footer>
-</section>
-
-		<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-
-<!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-
-<script src="js/smooth_anime.js"></script>
-
-	</body>
-</html>
