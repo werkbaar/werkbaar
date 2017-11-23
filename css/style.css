@@ -2,7 +2,7 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-    
+
 }
 h2 {
     font-size: 24px;
@@ -496,4 +496,34 @@ padding: 20px 0 0 0;
 }
 .blog-header{
   background-color: #f8f8f8
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.PageNavigation a:hover {
+ background-position: -99.99% 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
 }

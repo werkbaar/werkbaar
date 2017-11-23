@@ -37,11 +37,29 @@ comments: true
 
         </header>
 
+        <div class="PageNavigation">
+  {% if page.previous.url %}
+    <b><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></b>
+  {% endif %}
+  {% if page.next.url %}
+    <b><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></b>
+  {% endif %}
+</div>
+
         <article class="page-content">
 
           {{ content }}
 
         </article>
+
+        <div class="PageNavigation">
+  {% if page.previous.url %}
+    <b><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></b>
+  {% endif %}
+  {% if page.next.url %}
+    <b><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></b>
+  {% endif %}
+</div>
 
 <br><br><br>
 
