@@ -6,13 +6,11 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
 
-
-
   <!-- Bootstrap Core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
 
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,10 +41,17 @@
   	<meta name="msapplication-TileImage" content="img/favicon-144.png">
   	<meta name="msapplication-config" content="/browserconfig.xml">
 
-  	<!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon-16.png">
+    <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon-32.png">
+    <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon-64.png">
 
+  	<!-- ****** faviconit.com favicons ****** -->
+    
+    <!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions,
+    when css wasnt working & when navbar.toggle wasnt working on second page -->
 
   <style>
+
 
 
    #header {
@@ -57,6 +62,7 @@
      background-size: cover;
      width: 100%;
    }
+
 
    .welkom-video {
        height: auto;
@@ -257,7 +263,7 @@ margin-bottom: 0;
 
    #contact {
      padding: 80px 0 80px 0 !important;
-     background: url("img/contact2.png") no-repeat center center fixed;
+     background: url("/img/contact2.png") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;

@@ -8,8 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="aline">
 
-
-
   <!-- Bootstrap Core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,10 +43,17 @@
   	<meta name="msapplication-TileImage" content="img/favicon-144.png">
   	<meta name="msapplication-config" content="/browserconfig.xml">
 
-  	<!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-16.png">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-32.png">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-64.png">
 
+  	<!-- ****** faviconit.com favicons ****** -->
+    
+    <!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions,
+    when css wasnt working & when navbar.toggle wasnt working on second page -->
 
   <style>
+
 
 
    #header {
@@ -59,6 +64,7 @@
      background-size: cover;
      width: 100%;
    }
+
 
    .welkom-video {
        height: auto;
@@ -259,7 +265,7 @@ margin-bottom: 0;
 
    #contact {
      padding: 80px 0 80px 0 !important;
-     background: url("img/contact2.png") no-repeat center center fixed;
+     background: url("/img/contact2.png") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -445,21 +451,36 @@ margin-bottom: 0;
   <div class="container">
     <div class="navbar-header page-scroll">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 						</button>
-      <a class="navbar-brand page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"><img class="img-responsive" alt="logo"
-							src="/img\logo_200x38px_t.png"></a>
+
+  <!--<a class="navbar-brand page-scroll" href="/#header" id="logo"><img class="img-responsive" src="/img\logo_200x38px_t.png" /></a>-->
+
+<a class="navbar-brand" href="/#header" id="logo"><img class="img-responsive" src="/img\logo_200x38px_t.png" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
+
+        <li class=""><a href="/#welkom">Welkom</a></li>
+
+        <li class=""><a href="/#gasten">Onze Gasten</a></li>
+
+        <li class=""><a href="/#kaart">Het Menu</a></li>
+
+        <li class=""><a href="/#gastvrouw">De Gastvrouw</a></li>
+
+        <li class=""><a href="/#contact">Contact</a></li>
+
+        <li class=""><a href="/blog">Blog</a></li>
+
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
+      <!--  <li class="hidden">
           <a class="page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"></a>
         </li>
         <li>
@@ -477,7 +498,9 @@ margin-bottom: 0;
         <li>
           <a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
         </li>
-
+        <li>
+          <a class="page-scroll" href="/blog/" data-toggle="collapse" data-target=".navbar-collapse.in">Blog</a>
+        </li> -->
 
       </ul>
     </div>
@@ -487,8 +510,128 @@ margin-bottom: 0;
 </nav>
 
 
+    <div id="blog" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 
-    
+      
+        <div class="blog-short">
+          <h3><a href="/2017/09/01/yulia/">Van beleggingsadviseur tot bezielster van de F.A.B.-Academy (jg. 1, afl. 5)</a></h3>
+
+  		<div>
+  		  <small>
+  			<time>
+          
+1
+September
+
+2017
+  			</time>
+  		  </small>
+           </div>
+
+          
+            <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+              <img src="/img\image8520.png"
+              alt="Van beleggingsadviseur tot bezielster van de F.A.B.-Academy (jg. 1, afl. 5)"  class="pull-left img-responsive thumb img-thumbnail" />
+            </div>
+          
+
+          <article class="excerpt"><p>Ik ben Yulia. Echtgenote, mama van twee bijzondere kinderen en vooral een vrouw die vol passie voor het leven en met een portie nieuwsgierigheid andere vrouwen in hun kracht wil zetten in de  F.A.B.-Academy.</p>
+
+</article>
+          <a class="pull-right marginBottom10" href="/2017/09/01/yulia/">Lees verder</a>
+        </div>
+      
+        <div class="blog-short">
+          <h3><a href="/2017/08/25/wouter/">Van advocaat-stagiair aan de balie naar het roer van familiebedrijf Torfs (jg. 1, afl. 4)</a></h3>
+
+  		<div>
+  		  <small>
+  			<time>
+          
+25
+Augustus
+
+2017
+  			</time>
+  		  </small>
+           </div>
+
+          
+            <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+              <img src="/img\image5094.png"
+              alt="Van advocaat-stagiair aan de balie naar het roer van familiebedrijf Torfs (jg. 1, afl. 4)"  class="pull-left img-responsive thumb img-thumbnail" />
+            </div>
+          
+
+          <article class="excerpt"><p>Ik ben Wouter. Nu 59 jaar, gehuwd, vier kinderen. Ik lees graag, vooral boeken rond persoonlijke ontwikkeling, vaak boeddhistisch geïnspireerd, zoals de boeken van Jan Geurtz. Daarnaast probeer ik ook wel wat te sporten. Ik studeerde rechten, maar ben nu zo een 30 jaar actief in familiebedrijf schoenen Torfs.</p>
+
+</article>
+          <a class="pull-right marginBottom10" href="/2017/08/25/wouter/">Lees verder</a>
+        </div>
+      
+        <div class="blog-short">
+          <h3><a href="/2017/08/18/charlotte/">Van Chinees-sprekend coördinator naar digitale vernieuwer voor bedrijven (jg. 1, afl. 3)</a></h3>
+
+  		<div>
+  		  <small>
+  			<time>
+          
+18
+Augustus
+
+2017
+  			</time>
+  		  </small>
+           </div>
+
+          
+            <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+              <img src="/img\image4522.png"
+              alt="Van Chinees-sprekend coördinator naar digitale vernieuwer voor bedrijven (jg. 1, afl. 3)"  class="pull-left img-responsive thumb img-thumbnail" />
+            </div>
+          
+
+          <article class="excerpt"><p>Ik ben Charlotte, 31. Ik hou van reizen, koken, lekker eten, wijn, en vooral ook van contact met “anderen”. Ik studeerde Sinologie en heb een master Culturele Studies. Vandaag help ik organisaties met duurzame groei en modernisering.</p>
+
+</article>
+          <a class="pull-right marginBottom10" href="/2017/08/18/charlotte/">Lees verder</a>
+        </div>
+      
+        <div class="blog-short">
+          <h3><a href="/2017/08/11/olivier/">Van eindwerk tot StartBloc (jg. 1, afl. 2)</a></h3>
+
+  		<div>
+  		  <small>
+  			<time>
+          
+11
+Augustus
+
+2017
+  			</time>
+  		  </small>
+           </div>
+
+          
+            <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+              <img src="/img\image4512.png"
+              alt="Van eindwerk tot StartBloc (jg. 1, afl. 2)"  class="pull-left img-responsive thumb img-thumbnail" />
+            </div>
+          
+
+          <article class="excerpt"><p>Ik ben Olivier, 23 jaar. Gepassioneerd door de Antwerpse Start-up scene! Ik duik graag en ben een echte dierenvriend. Ik woon in ’t Stad, waar je me wel eens in een cafeetje treft. Tot juni was ik nog student Internationaal Ondernemen aan de KdG. Die opleiding wist ik af te ronden met de oprichting van Startbloc. StartBloc is een voordelige coworking space in hartje Antwerpen, gebouwd voor starters.</p>
+
+</article>
+          <a class="pull-right marginBottom10" href="/2017/08/11/olivier/">Lees verder</a>
+        </div>
+      
+
+    </div>
+  </div>
+</div>
+
 
 		
 <section class="footer-section">
@@ -524,18 +667,23 @@ margin-bottom: 0;
 </section>
 
 		<!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="/js/jquery.js"></script>
+
 
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 
 <!-- Scrolling Nav JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
+
 <script src="js/scrolling-nav.js"></script>
 
 <script src="js/smooth_anime.js"></script>
+
+<!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions, 
+when css wasnt working & when navbar.toggle wasnt working on second page -->
 
 	</body>
 </html>

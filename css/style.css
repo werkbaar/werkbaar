@@ -23,6 +23,8 @@ h4 {
 
 /* NAV //////////////////////////////////////////////////////////////////////*/
 
+
+
 .navbar {
   margin-bottom: 0;
   background-color: #fff;
@@ -389,4 +391,108 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
+}
+
+
+/* BLOG & POST /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.page-header{
+  margin: 10px 0;
+  text-align:center;
+  padding-bottom:25px;
+  background-color: #f6f6f6;
+}
+.page-header h1{
+  margin: 0;
+}
+
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
+}
+
+/*blog stuff */
+.blog-short{
+  border-bottom:1px solid #ddd;
+  padding-bottom:30px;
+  display: table;
+  background-color: rgba(0,0,0,0.6);
+  padding: 40px 20px 20px 20px;
+
+}
+.blog-short .excerpt{
+  min-height:100px;
+}
+
+.blog-short p, .blog-short time {
+color: white;
+
+}
+
+
+.margin10{margin-bottom:10px; margin-right:10px;}
+
+/* utility classes */
+.no-margin:{
+  margin:0;
+}
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+.centered-text{
+  text-align: center;
+}
+
+
+/* front page stuff */
+.imgcontainer img{
+  width: 100%;
+}
+
+.page-title{
+  padding-top: 20px;
+}
+
+.page-content {
+
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px 20px 20px 20px;
+}
+
+.page-content p {
+
+color: white;
+
+}
+
+#blog {
+padding: 100px 0 50px 0;
+background: url('/img/g9651.png') no-repeat center center fixed;
+background-size: cover;
+width: 100%;
+
+}
+
+#blog p {
+padding: 20px 0 0 0;
+
+}
+
+
+#blog h1, #blog h2, #blog h3, #blog h4, #blog h5, #blog h6 {
+    color: #f4511e;
+}
+
+#blog a {
+ color: #f4511e !important;
+}
+#main-menu a{
+  color:#f4511e;
+}
+
+.label-tag{
+  background-color: #f4511e;
+}
+.blog-header{
+  background-color: #f8f8f8
 }

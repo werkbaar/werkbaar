@@ -1,4 +1,53 @@
 ---
-layout: page
-permalink: /blog/
+layout: default
 ---
+
+
+
+<div id="blog" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+
+      {% for post in site.posts %}
+        <div class="blog-short">
+          <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+
+  		<div>
+  		  <small>
+  			<time>
+          {% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+{% when '1' %}Januari
+{% when '2' %}Februari
+{% when '3' %}Maart
+{% when '4' %}April
+{% when '5' %}Mei
+{% when '6' %}Juni
+{% when '7' %}Juli
+{% when '8' %}Augustus
+{% when '9' %}September
+{% when '10' %}Oktober
+{% when '11' %}November
+{% when '12' %}December
+{% endcase %}
+{{ post.date | date: "%Y" }}
+  			</time>
+  		  </small>
+           </div>
+
+          {% if post.thumbnail %}
+            <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+              <img src="{{post.thumbnail}}"
+              alt="{{post.title}}"  class="pull-left img-responsive thumb img-thumbnail" />
+            </div>
+          {% endif %}
+
+          <article class="excerpt">{{post.excerpt}}</article>
+          <a class="pull-right marginBottom10" href="{{post.url | prepend: site.baseurl }}">Lees verder</a>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

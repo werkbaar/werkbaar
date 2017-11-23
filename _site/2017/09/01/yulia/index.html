@@ -8,8 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="aline">
 
-
-
   <!-- Bootstrap Core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,10 +43,17 @@
   	<meta name="msapplication-TileImage" content="img/favicon-144.png">
   	<meta name="msapplication-config" content="/browserconfig.xml">
 
-  	<!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-16.png">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-32.png">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon-64.png">
 
+  	<!-- ****** faviconit.com favicons ****** -->
+    
+    <!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions,
+    when css wasnt working & when navbar.toggle wasnt working on second page -->
 
   <style>
+
 
 
    #header {
@@ -59,6 +64,7 @@
      background-size: cover;
      width: 100%;
    }
+
 
    .welkom-video {
        height: auto;
@@ -259,7 +265,7 @@ margin-bottom: 0;
 
    #contact {
      padding: 80px 0 80px 0 !important;
-     background: url("img/contact2.png") no-repeat center center fixed;
+     background: url("/img/contact2.png") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -445,21 +451,36 @@ margin-bottom: 0;
   <div class="container">
     <div class="navbar-header page-scroll">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 						</button>
-      <a class="navbar-brand page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"><img class="img-responsive" alt="logo"
-							src="/img\logo_200x38px_t.png"></a>
+
+  <!--<a class="navbar-brand page-scroll" href="/#header" id="logo"><img class="img-responsive" src="/img\logo_200x38px_t.png" /></a>-->
+
+<a class="navbar-brand" href="/#header" id="logo"><img class="img-responsive" src="/img\logo_200x38px_t.png" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
+
+        <li class=""><a href="/#welkom">Welkom</a></li>
+
+        <li class=""><a href="/#gasten">Onze Gasten</a></li>
+
+        <li class=""><a href="/#kaart">Het Menu</a></li>
+
+        <li class=""><a href="/#gastvrouw">De Gastvrouw</a></li>
+
+        <li class=""><a href="/#contact">Contact</a></li>
+
+        <li class=""><a href="/blog">Blog</a></li>
+
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
+      <!--  <li class="hidden">
           <a class="page-scroll" href="#header" data-toggle="collapse" data-target=".navbar-collapse.in"></a>
         </li>
         <li>
@@ -477,7 +498,9 @@ margin-bottom: 0;
         <li>
           <a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
         </li>
-
+        <li>
+          <a class="page-scroll" href="/blog/" data-toggle="collapse" data-target=".navbar-collapse.in">Blog</a>
+        </li> -->
 
       </ul>
     </div>
@@ -487,8 +510,91 @@ margin-bottom: 0;
 </nav>
 
 
+    <div id="blog" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+      <div class="page">
 
-    
+        <header class="page-header">
+          <h3 class="page-title"><a href="/2017/09/01/yulia/">Van beleggingsadviseur tot bezielster van de F.A.B.-Academy (jg. 1, afl. 5)</a></h3>
+          <div class="post-metadata">
+            <div> <i class="fa fa-calendar"></i>
+
+              <time>
+                
+1
+September
+
+2017
+              </time>
+            </div>
+          </div>
+
+        </header>
+
+        <article class="page-content">
+
+          <p>Ik ben Yulia. Echtgenote, mama van twee bijzondere kinderen en vooral een vrouw die vol passie voor het leven en met een portie nieuwsgierigheid andere vrouwen in hun kracht wil zetten in de  F.A.B.-Academy.</p>
+
+<p><img style="float: left;margin:0 20px 10px 0" src="/img\image8520.png" /></p>
+
+<p><strong>Wat is je WerkBaAr verhaal?</strong></p>
+
+<p>Ik studeerde business management, was beleggingsadviseur, hielp als freelancer bedrijven groeien in buitenland…. tot de financiële crisis me deed inzien dat ik meer vanuit mijn persoonlijke waarden wilde werken en ook echt en voluit « vrij » wilde zijn. Voor mij geen urenlange files meer (al is een bedrijfswagen handig), geen beperkingen qua vakantiedagen en geen verantwoordingsverplichtingen tegenover hiërarchisch meerderen. Wel de vrijheid hebben om te reizen en anderen te helpen, om voluit te leven en te werken vanuit mijn passie eerder dan om de rekeningen te betalen.</p>
+
+<p>Zo richtte ik in 2014 de F.A.B.-Academy op: een groeitraject voor vrouwelijke ondernemers. In de F.A.B.-Academy draait het om ondernemerschap, psychologie en vrouwelijkheid. Centraal staat de idee dat je vanuit je vrouwelijke energie bijzondere dingen kan bereiken. Het is jammer dat zoveel vrouwen kunnen en willen ondernemen, maar daar nooit mee beginnen door een gebrek aan zelfvertrouwen. Binnen de Academy biedt ik hen methoden om in hun kracht te staan, alsook basis <em>business</em> technieken die hen toelaten om met minder inspanningen een groter effect te realiseren.</p>
+
+<p><strong>Ten volle en met zin en passie werken vanuit je talenten, dat is ….</strong></p>
+
+<p>… voor mij werken vanuit de principes waarrond de F.A.B.-Academy is gebouwd: als een echte onderneemster, vanuit psychologische inzichten, met nadruk op mijn vrouwelijkheid. Minder puur vanuit « het hoofd », vertrouwend op dat waarheen « je hart en buik » mij leidt.</p>
+
+<p><strong>Wat waren je eerste stappen?</strong></p>
+
+<p>Tijd nemen om te ontdekken wie ik ben en wat ik wil, wat me drijft en wat mijn kernwaarden zijn. Pas toen ik daarin inzicht had kon ik mijn activiteiten en beslissingen op die passie en waarden afstemmen. Het liet me toe om mijn angsten en mijn onzekerheden aan te pakken, en zo steeds meer (als vrouw) in mijn kracht staan. En die kracht gaf me dan de kans om met minder inspanningen meer te bereiken. Die ervaring wil ik ook doorgeven in de Academy.</p>
+
+<p><strong>Ervaringen en tips die ik met andere ondernemende talentbieders wil delen …</strong></p>
+
+<p>Neem de tijd om te ontdekken wie je bent, wat je wil, wat je drijft, wat voor jou belangrijk is.
+Wees bereid bij te leren en extra vaardigheden te ontwikkelen. Wil je als ondernemer starten, verdiep je dan in business technieken en vaardigheden,vooral op vlak van <em>marketing &amp; sales</em>. <em>Marketing</em> vaardigheden leren je inzien wat « de markt » zoekt en wil, ze helpen je « leads » aan te trekken. <em>Sales</em> technieken doen je jouw product of dienst aanbieden vanuit je hart zodat je tevreden klanten krijgt.</p>
+
+<p>Bewaar ten slotte je focus - hoeveel interessante zijproducten er ook om de hoek loeren. Focus is cruciaal. Dat wil echter helemaal niet zeggen dat je je van anderen moet afzonderen. Neen, verbind jezelf met anderen en creëer partnerschappen. Wat je geeft, krijg je terug. Help elkaar voort, dan zal je zelf ook sneller groeien.</p>
+
+<p><em>Meer weten over de F.A.B.-Academy?</em></p>
+
+<p>Vind meer op <a href="https://www.yuliastark.be/fabacademy/">yuliastark.be/fabacademy</a> of volg mij op <a href="https://www.facebook.com/FemininityAndBusiness">facebook</a></p>
+
+
+        </article>
+
+<br><br><br>
+
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://werkbaar.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 		
 <section class="footer-section">
@@ -524,18 +630,23 @@ margin-bottom: 0;
 </section>
 
 		<!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="/js/jquery.js"></script>
+
 
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 
 <!-- Scrolling Nav JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
+
 <script src="js/scrolling-nav.js"></script>
 
 <script src="js/smooth_anime.js"></script>
+
+<!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions, 
+when css wasnt working & when navbar.toggle wasnt working on second page -->
 
 	</body>
 </html>
