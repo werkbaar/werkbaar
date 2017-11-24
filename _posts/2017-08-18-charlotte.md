@@ -10,6 +10,8 @@ Ik ben Charlotte, 31. Ik hou van reizen, koken, lekker eten, wijn, en vooral ook
 
 <img class="img-responsive" style="float: left;margin:0 20px 15px 0" src="/img\image4522.png">
 
+
+
 **Wat is je WerkBaAr verhaal?**
 
 Mijn carrièrepad is divers en weerspiegelt mijn vele interesses. Ik ben dan ook van werk veranderd telkens wanneer ik aanvoelde dat mijn rol te eenzijdig werd en de ontwikkelingsmogelijkheden in die rol mij niet meer voldoende konden motiveren.
