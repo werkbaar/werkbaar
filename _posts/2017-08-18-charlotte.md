@@ -10,7 +10,7 @@ author: Charlotte
 
 Ik ben Charlotte, 31. Ik hou van reizen, koken, lekker eten, wijn, en vooral ook van contact met “anderen”. Ik studeerde Sinologie en heb een master Culturele Studies. Vandaag help ik organisaties met duurzame groei en modernisering.
 
-<img class="img-responsive" style="float: left;margin:0 20px 15px 0" src="/img\image4522.png">
+<img alt="Charlotte" class="img-responsive" style="float: left;margin:0 20px 15px 0" src="/img\image4522.png">
 
 
 
