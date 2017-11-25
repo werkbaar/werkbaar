@@ -3,13 +3,11 @@
 # ----------------------- #
 
 url: http://werkbaar.net
-baseurl: 
-title: WerkBaAr
+baseurl:
+title: Pittig trefpunt voor ondernemend talent | WerkBaAr
 email: aline@werkbaar.net
 author: aline
-description: > # ""
-copyright:
-credits: 'Credits: '
+description: WerkBaAr coacht ondernemende talenten & giet hun professionele ontdekkingstocht in een zinvol verhaal.
 port: 4000
 
 # ----------------------- #
@@ -17,8 +15,8 @@ port: 4000
 # ----------------------- #
 
 plugins:
-  #  - jekyll-seo-tag
-  #  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 # Build settings

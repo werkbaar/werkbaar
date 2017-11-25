@@ -1,10 +1,37 @@
 <head>
 
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="{{ page.excerpt | strip_html }}"/>
+    {% else %}
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.url }}/about/">
+    {% endif %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% if page.tags %}
+  <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+    {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+    {% endif %}
+    {% if author %}
+  <meta property="article:author" content="{{ author.name }}" />
+    {% endif %}
+    {% if page.robots %}
+  <meta name="robots" content="{{page.robots}}" /> <!-- to exclude some pages from seo -->
+    {% endif %}
 
   <!-- Bootstrap Core CSS -->
   <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +73,7 @@
     <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon-64.png">
 
   	<!-- ****** faviconit.com favicons ****** -->
-    
+
     <!-- Important to remember: Always add / at the beginning of a path so program is working from root: This helped me on several occasions,
     when css wasnt working & when navbar.toggle wasnt working on second page -->
 
@@ -437,5 +464,6 @@ margin-bottom: 0;
 
   </style>
 
+{% seo %}
 
 </head>
