@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog1
+category: Pittigekopjes
 date: 2017-08-18 13:08
 thumbnail: /img\image4522.png
 title: Van Chinees-sprekend coördinator naar digitale vernieuwer (jg. 1, afl. 3)
