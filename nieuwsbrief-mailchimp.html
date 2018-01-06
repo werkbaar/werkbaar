@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>*|MC:SUBJECT|*</title>
+    <style type="text/css">
+        /**
+         * Client styles
+         */
+        #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+        body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+        table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+        img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /**
+         * Reset styles
+         */
+        body{margin:0; padding:0;}
+        img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+        table{border-collapse:collapse !important;}
+        body,.bodytable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /**
+         * Template styles
+         */
+        body, .bodytable {
+            font-family: Arial,sans-serif;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .archive {
+            padding: 10px 10px 0 10px;
+        }
+
+        .container {
+            width: 600px;
+            border: 1px solid #CCC;
+        }
+
+        /**
+         * Responsive styles
+         */
+        @media only screen and (max-width: 600px){
+            /* Client specific mobile styles */
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+            body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+            /* Template styles */
+            .container {
+                max-width: 600px !important;
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px){
+            .mobile-block {
+                display: block;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    <!-- Ruimte voor snippet: http://www.dutchcowboys.nl/email/gebruik-altijd-een-snippet-in-commerciele-en-informatieve-e-mails -->
+    <div style="display: none !important; visibility: hidden !important; font-size: 1px; color: #FFFFFF; line-height: 1px; max-height: 0px; max-width: 0px; overflow: hidden;"></div>
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="bodytable">
+            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+            <tr>
+                <td align="center" valign="top" class="archive">
+                    <a href="*|ARCHIVE|*" target="_blank" title="Open nieuwsbrief in browser." style="text-decoration: none; color: #454545;">Open deze mail in uw browser</a>
+                </td>
+            </tr>
+            <!-- *|END:IF|* -->
+            <tr>
+                <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container">
+                        <!-- BEGIN HEADER // -->
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- // END HEADER -->
+
+                        <!-- BEGIN BODY // -->
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td mc:container="contentblocktop"></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+
+                                            <!-- // Begin Module: Afbeelding links, content rechts \\ -->
+                                            <div mc:repeatable="image_with_content" mc:variant="content met afbeelding links">
+                                            <table cellpadding="0" cellspacing="0" width="100%" border="0" align="center">
+                                                <tr>
+                                                    <td class="mobile-block" width="44%" valign="top"><img src="http://lorempixel.com/260/170/transport/7" border="0" alt="" style="width: 100%; max-width:260px;" mc:label="260 breed" mc:edit="afbeelding_links"></td>
+                                                    <td class="mobile-block" width="4%"></td>
+                                                    <td class="mobile-block" width="52%" valign="top">
+                                                        <strong class="title" mc:edit="titel">Titel blok</strong><br>
+                                                        <div class="content" mc:edit="content">
+                                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu. Phasel lus blandit magna enim ut  lorem ipsum amet Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu.
+                                                        </div>
+                                                        <div class="button" mc:hideable mc:edit="button">
+                                                            <a href="#">Lees meer</a> &rsaquo;
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </div>
+                                            <!-- // End Module: Afbeelding links, content rechts \\ -->
+
+                                            <!-- // Begin Module: Afbeelding rechts, content link \\ -->
+                                            <div mc:repeatable="image_with_content" mc:variant="content met afbeelding rechts">
+                                            <table cellpadding="0" cellspacing="0" width="100%" border="0" align="center">
+                                                <tr>
+                                                    <td class="mobile-block" width="52%" valign="top">
+                                                        <strong class="title" mc:edit="titel">Titel blok</strong><br>
+                                                        <div class="content" mc:edit="content">
+                                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu. Phasel lus blandit magna enim ut  lorem ipsum amet Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu.
+                                                        </div>
+                                                        <div class="button" mc:hideable mc:edit="button">
+                                                            <a href="#">Lees meer</a> &rsaquo;
+                                                        </div>
+                                                    </td>
+                                                    <td class="mobile-block" width="4%"></td>
+                                                    <td class="mobile-block" width="44%" valign="top"><img src="http://lorempixel.com/260/170/transport/7" border="0" alt="" style="width: 100%; max-width:260px;" mc:label="260 breed" mc:edit="afbeelding_rechts"></td>
+                                                </tr>
+                                            </table>
+                                            </div>
+                                            <!-- // End Module: Afbeelding rechts, content links \\ -->
+
+                                            <!-- // Begin Module: 2 blokken \\ -->
+                                            <div mc:repeatable="image_with_content" mc:variant="2 blokken">
+                                                <table cellpadding="0" cellspacing="0" width="100%" border="0" align="center">
+                                                    <tr>
+                                                        <td width="44%" valign="top" class="mobile-block">
+                                                            <strong class="title" mc:edit="titel_links">Titel blok</strong><br>
+                                                            <div><img src="http://lorempixel.com/260/170/transport/7" border="0" alt="" style="width: 100%; max-width:260px;" mc:label="260 breed" mc:edit="afbeelding_links"></div>
+                                                            <div class="content" mc:edit="content_links">
+                                                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu. Phasel lus blandit magna enim ut  lorem ipsum amet Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu.
+                                                            </div>
+                                                            <div class="button" mc:hideable mc:edit="button_links">
+                                                                <a href="#">Lees meer</a> &rsaquo;
+                                                            </div>
+                                                        </td>
+                                                        <td width="12%" class="mobile-block"></td>
+                                                        <td width="44%" valign="top" class="mobile-block">
+                                                            <strong class="title" mc:edit="titel_rechts">Titel blok</strong><br>
+                                                            <div><img src="http://lorempixel.com/260/170/transport/7" border="0" alt="" style="width: 100%; max-width:260px;" mc:label="260 breed" mc:edit="afbeelding_rechts"></div>
+                                                            <div class="content" mc:edit="content_rechts">
+                                                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu. Phasel lus blandit magna enim ut  lorem ipsum amet Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu.
+                                                            </div>
+                                                            <div class="button" mc:hideable mc:edit="button_rechts">
+                                                                <a href="#">Lees meer</a> &rsaquo;
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <!-- // End Module: 2 blokken \\ -->
+
+                                            <!-- // Begin Module: Breed \\ -->
+                                            <div mc:repeatable="image_with_content" mc:variant="breed">
+                                            <table cellpadding="0" cellspacing="0" width="100%" border="0" align="center">
+                                                <tr>
+                                                    <td width="100%" valign="top">
+                                                        <strong class="title" mc:edit="titel">Titel blok</strong><br>
+                                                        <div><img src="http://lorempixel.com/600/170/transport/7" border="0" alt="" style="width: 100%; max-width:600px;" mc:label="600 breed" mc:edit="afbeelding"></div>
+                                                        <div class="content" mc:edit="content">
+                                                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu. Phasel lus blandit magna enim ut  lorem ipsum amet Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut vel metus arcu.
+                                                        </div>
+                                                        <div class="button" mc:hideable mc:edit="button">
+                                                            <a href="#">Lees meer</a> &rsaquo;
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </div>
+                                            <!-- // End Module: Breed \\ -->
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td mc:container="contentblockbottom"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- // END BODY -->
+
+                        <!-- BEGIN FOOTER // -->
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top">
+                                            <a href="*|UNSUB|*" style="color: #333333;">Klik hier</a> om u af te melden voor onze nieuwsbrief
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- // END FOOTER -->
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
