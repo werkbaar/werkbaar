@@ -38,3 +38,5 @@ Ik ben nooit zomaar onbezonnen van job veranderd en heb dan ook nooit zelf ‘na
 Werk aan goede relaties. Iedereen met wie je in contact komt - uit welke hoek ook – kan iets betekenen voor jou. Wil je van job veranderen of iets anders doen in je huidige job, laat je dan adviseren door HR professionals, of je nu later met hen in zee gaat of niet.
 
 Volhard. Zet je zoekproces naar een job die je met passie kan doen door, ondanks je twijfels en onzekerheden. Volharding kan soms het meeste opbrengen. Maar communiceer vooral ook over je twijfels en onzekerheden.  Vroeger zat ik vaak in met de mogelijke reactie van mijn huidige werkgever en anderen op mijn switch. Vandaag communiceer ik veel directer en opener over jobtwijfels. Dat helpt.
+
+*Tekstverwerking: [Aline@WerkBaAr](http://werkbaar.net/#gastvrouw)*
