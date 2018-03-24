@@ -878,6 +878,9 @@ th {
 .glyphicon-tree-deciduous:before {
   content: "\e200";
 }
+.glyphicon-coffee-cup:before {
+  content: "\e278";
+}
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
